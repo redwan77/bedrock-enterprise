@@ -1,23 +1,24 @@
+// bedrockMapLocation.js
 import { LightningElement } from 'lwc';
 
+const DEFAULT_ZOOM = 12;
+
 export default class BedrockMapLocation extends LightningElement {
-    zoomLevel = 10;
+    zoomLevel = DEFAULT_ZOOM;
+
     mapMarkers = [
         {
             location: {
-                Street: 'One Market, Suite 300',
+                Street: 'The Landmark @ One Market, Suite 300',
                 City: 'San Francisco',
                 State: 'CA',
-                PostalCode: '94105'
+                PostalCode: '94105',
+                Country: 'US'
             },
-              title: 'The Landmark @ One Market',
-            description: 'Salesforce West Tower Area',
-            icon: 'standard:location',
-             value: "BedRock",
-            icon: "standard:account",
-            title: "BedRock Headquarter",
-            description: "This is a long description",
+            title: 'Bedrock Headquarters',
+            description: 'San Francisco, CA 94105',
+            icon: 'standard:account',
+            value: 'BEDROCK_HQ'
         }
     ];
-
 }

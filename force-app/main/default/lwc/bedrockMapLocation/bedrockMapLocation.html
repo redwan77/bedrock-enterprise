@@ -1,7 +1,12 @@
+<!-- bedrockMapLocation.html -->
 <template>
-    <lightning-map 
-        map-markers={markers}
-        zoom-level={zoomLevel}
-        
-    ></lightning-map>
+    <lightning-card icon-name="standard:account" variant="base">
+        <div slot="title">Bedrock Corporate Headquarters</div>
+        <div class="slds-p-around_medium">
+            <lightning-map
+                map-markers={mapMarkers}
+                zoom-level={zoomLevel}
+            ></lightning-map>
+        </div>
+    </lightning-card>
 </template>
