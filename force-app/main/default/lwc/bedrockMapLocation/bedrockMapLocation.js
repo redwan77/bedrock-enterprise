@@ -10,40 +10,40 @@ export default class BedrockMapLocation extends LightningElement {
     zoomLevel = DEFAULT_ZOOM;
 
     @wire(getHeadQuarterLocation)
-    headquartersLocation;
+    headquartersLocations;
 
-    get hasLocation() {
-        return !!this.headquartersLocation?.data;
-    }
-
-    get hasError() {
-        return !!this.headquartersLocation?.error;
-    }
-
-    get isLoading() {
-        return !this.hasLocation && !this.hasError;
-    }
 
     get mapMarkers() {
-        const locationData = this.headquartersLocation?.data;
-        if (!locationData) {
-            return [];
-        }
-
-        return [
-            {
+        return this.locationData.map((location) => {
+            return {
                 location: {
-                    Street: locationData.Street__c,
-                    City: locationData.City__c,
-                    State: locationData.State__c,
-                    PostalCode: locationData.PostalCode__c,
-                    Country: locationData.Country__c
+                    Street: location.Street__c,
+                    City: location.City__c,
+                    State: location.State__c,
+                    PostalCode: location.PostalCode__c,
+                    Country: location.Country__c
                 },
                 title: MARKER_TITLE,
                 description: MARKER_DESCRIPTION,
                 icon: 'standard:account',
-                value: 'BEDROCK_HQ'
-            }
-        ];
+                value: location.value__c || location.Id
+            };
+        });
+    }
+
+    get locationData() {
+        return this.headquartersLocations?.data ?? [];
+    }
+
+    get hasLocation() {
+        return this.locationData.length > 0;
+    }
+
+    get hasError() {
+        return !!this.headquartersLocations?.error;
+    }
+
+    get isLoading() {
+        return !this.hasLocation && !this.hasError;
     }
 }
