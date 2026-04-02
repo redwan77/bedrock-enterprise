@@ -32,11 +32,11 @@
         "javascript": false
     },
     "editor.formatOnSave": true,
-    "workbench.colorTheme": "Eclipse Light by Solrike",
+    "workbench.colorTheme": "Visual Studio Dark",
     "salesforce-internal-dx.claudeCodeMarketplaceConfigured": true,
     "workbench.colorCustomizations": {
-        "statusBar.background": "#c7e9ff",
-        "statusBar.foreground": "#0B1F3B",
+        "statusBar.background": "#1565A0",
+        "statusBar.foreground": "#FFFFFF",
         "statusBar.noFolderBackground": "#93C5FD",
         "statusBar.debuggingBackground": "#FCA5A5"
     },
