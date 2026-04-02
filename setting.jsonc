@@ -1,0 +1,61 @@
+{
+    "salesforcedx-vscode-core.telemetry.enabled": false,
+    "salesforcedx-vscode-slds.enabled": true,
+    "salesforcedx-vscode-slds.basic.bemNaming": true,
+    "salesforcedx-vscode-slds.basic.mobileValidation": true,
+    "salesforcedx-vscode-slds.enhancements.autoSuggest": true,
+    "salesforcedx-vscode-apex.java.home": "/Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home",
+    "xml.java.home": "/Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home",
+    "xml.server.vmargs": "-Xmx2G",
+    "salesforcedx-vscode-apex.java.memory": 4096,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[apex]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.quickSuggestions": {
+        "other": true,
+        "strings": true
+    },
+    "editor.hover.enabled": true,
+    "editor.hover.delay": 300,
+    "editor.parameterHints.enabled": true,
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.acceptSuggestionOnEnter": "on",
+    "emmet.showSuggestionsAsSnippets": true,
+    "redhat.telemetry.enabled": false,
+    "salesforce.einsteinForDevelopers.enableAutocompletionsByFileType": {
+        "javascript": false
+    },
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "Eclipse Light by Solrike",
+    "salesforce-internal-dx.claudeCodeMarketplaceConfigured": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#c7e9ff",
+        "statusBar.foreground": "#0B1F3B",
+        "statusBar.noFolderBackground": "#93C5FD",
+        "statusBar.debuggingBackground": "#FCA5A5"
+    },
+    "workbench.iconTheme": "eclipse-file-icons-by-solrike",
+    "workbench.productIconTheme": "eclipse-product-icons-by-solrike",
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 11,
+    "editor.lineHeight": 1.25,
+    "git.blame.editorDecoration.enabled": false,
+    "git.blame.editorDecoration.disableHover": true,
+    "git.blame.statusBarItem.enabled": false,
+    "explorer.compactFolders": true,
+    "workbench.tree.indent": 6,
+    "window.zoomLevel": 0.5,
+    "gitlens.blame.line.enabled": false, // in modern version
+    "gitlens.codeLens.authors.enabled": true,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "editor.codeLens": false,
+    "xml.codeLens.enabled": true,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.currentLine.enabled": false,
+}
