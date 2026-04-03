@@ -12,7 +12,10 @@ export default class BedrockMapLocation extends LightningElement {
     @wire(getHeadQuarterLocation)
     headquartersLocations;
 
-
+    /**
+     * Get the map markers for the headquarters locations
+     * @returns {Array} of map markers
+     */
     get mapMarkers() {
         return this.locationData.map((location) => {
             return {
