@@ -1,4 +1,3 @@
-// bedrockMapLocation.js
 import { LightningElement, wire } from 'lwc';
 import getHeadQuarterLocation from '@salesforce/apex/BedRockLocationMetadataController.getHeadQuarterLocation';
 
