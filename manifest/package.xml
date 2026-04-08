@@ -14,6 +14,8 @@
 	</types>
 	<types>
 		<members>bedRocks_location__mdt</members>
+		<members>Healthcare_Quote_Staging__c</members>
+		<members>Healthcare_QuoteDetail_Staging__c</members>
 		<name>CustomObject</name>
 	</types>
 	<version>66.0</version>

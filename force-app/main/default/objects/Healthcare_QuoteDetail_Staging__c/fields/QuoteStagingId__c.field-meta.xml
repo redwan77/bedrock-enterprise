@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuoteStagingId__c</fullName>
+    <label>Quote Staging Id</label>
+    <referenceTo>Healthcare_Quote_Staging__c</referenceTo>
+    <relationshipLabel>Healthcare Quote Details</relationshipLabel>
+    <relationshipName>HealthcareQuoteDetails</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>
